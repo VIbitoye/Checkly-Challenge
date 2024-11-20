@@ -1,0 +1,30 @@
+{
+  "name": "checkly-challenge",
+  "version": "1.0.0",
+  "description": "Challenge for Checkly Junior Support Engineer ",
+  "main": "scripts/run-checks.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "deploy": "npx checkly deploy"
+  },
+  "keywords": [
+    "checkly",
+    "playwright",
+    "monitoring",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VIbitoye/Checkly-Challenge"
+  },
+  "author": "Victor Ibitoye",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.1",
+    "checkly": "^4.10.0"
+  }
+}
