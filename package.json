@@ -1,30 +1,35 @@
 {
   "name": "checkly-challenge",
   "version": "1.0.0",
-  "description": "Challenge for Checkly Junior Support Engineer ",
-  "main": "scripts/run-checks.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Challenge for Checkly Junior Support Engineer",
+  "main": "main.ts",
   "scripts": {
+    "start": "ts-node src/main.ts",
     "test": "npx playwright test",
     "deploy": "npx checkly deploy"
   },
-  "keywords": [
-    "checkly",
-    "playwright",
-    "monitoring",
-    "testing"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/VIbitoye/Checkly-Challenge"
+    "url": "git+https://github.com/VIbitoye/Checkly-Challenge.git"
   },
-  "author": "Victor Ibitoye",
-  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "prompts": "^2.4.2"
+  },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
-    "@types/node": "^22.9.1",
-    "checkly": "^4.10.0"
-  }
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.6.1",
+    "@types/prompts": "^2.4.0",
+    "checkly": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VIbitoye/Checkly-Challenge/issues"
+  },
+  "homepage": "https://github.com/VIbitoye/Checkly-Challenge#readme"
 }
